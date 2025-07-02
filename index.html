@@ -249,10 +249,10 @@
             // --- Chart.js Reporting Dashboard ---
             const ctx = document.getElementById('reportingChart').getContext('2d');
             const allData = {
-                labels: ['Chrome', 'Zoom', 'Slack', '1Password', 'Firefox', 'Docker', 'VS Code'],
+                labels: ['Chrome', 'Zoom', 'Slack', 'Prisma', '1Password', 'Firefox', 'Docker', 'VS Code', 'Beyond Identity', 'Viscosity'],
                 datasets: [{
                     label: '% Patched',
-                    data: [98, 92, 100, 85, 99, 70, 65],
+                    data: [98, 92, 100, 85, 99, 70, 65, 89, 75, 80],
                     backgroundColor: 'rgba(2, 132, 199, 0.6)', // sky-600
                     borderColor: 'rgba(2, 132, 199, 1)',
                     borderWidth: 1,
@@ -260,10 +260,10 @@
                 }]
             };
             const criticalData = {
-                labels: ['Chrome', 'Zoom', 'Firefox'],
+                labels: ['Chrome', 'Zoom', 'Firefox', 'Prisma', '1Password', 'Beyond Identity'],
                 datasets: [{
                     label: '% Patched',
-                    data: [98, 92, 99],
+                    data: [98, 92, 99, 85, 99, 78],
                     backgroundColor: 'rgba(225, 29, 72, 0.6)', // rose-600
                     borderColor: 'rgba(225, 29, 72, 1)',
                     borderWidth: 1,
