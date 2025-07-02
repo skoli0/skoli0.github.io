@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mac Admins India Conference: Scaling macOS Software Deployment</title>
+    <title>Interactive Report: Scaling macOS Software Deployment</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,6 +38,9 @@
                 height: 350px;
             }
         }
+        .aspect-video {
+          aspect-ratio: 16 / 9;
+        }
     </style>
 </head>
 <body class="text-slate-700">
@@ -68,7 +71,22 @@
                 </div>
             </div>
         </section>
-
+        
+ <!-- Workflow Diagram Section -->
+<section id="workflow-diagram" class="mb-20 md:mb-32">
+    <!-- Text below the image -->
+    <div class="text-center mt-10">
+        <h2 class="text-2xl font-bold text-slate-800">Architecture Overview</h2>
+        <p class="mt-2 max-w-2xl mx-auto text-md text-slate-600">
+            The below architecture diagram provides a complete overview of the workflow, <br>from developer commit to client deployment and reporting.
+        </p>
+    </div>
+    <!-- Image container with spacing above -->
+    <div class="relative w-full max-w-6xl mx-auto aspect-video mt-8">
+        <img id="workflow-diagram-img" src="workflow-diagram.svg" alt="End-to-end workflow diagram for macOS software deployment"
+            class="absolute inset-0 w-full h-full object-contain transition-all duration-700 ease-in-out rounded-lg" />
+    </div>
+</section>
         <!-- Content Sections -->
         <div class="space-y-20 md:space-y-32">
             
